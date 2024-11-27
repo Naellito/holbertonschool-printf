@@ -3,42 +3,53 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - Entry point for testing _printf
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int len;
-	int len2;
-	unsigned int ui;
-	void *addr;
+	int len, len2;
 
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
-	ui = (unsigned int)INT_MAX + 1024;
-	addr = (void *)0x7ffe637541f0;
-	_printf("Length:[%d, %i]\n", len, len);
-	printf("Length:[%d, %i]\n", len2, len2);
-	_printf("Negative:[%d]\n", -762534);
-	printf("Negative:[%d]\n", -762534);
-	_printf("Unsigned:[%u]\n", ui);
-	printf("Unsigned:[%u]\n", ui);
-	_printf("Unsigned octal:[%o]\n", ui);
-	printf("Unsigned octal:[%o]\n", ui);
-	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-	_printf("Character:[%c]\n", 'H');
-	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !");
-	printf("String:[%s]\n", "I am a string !");
-	_printf("Address:[%p]\n", addr);
-	printf("Address:[%p]\n", addr);
-	len = _printf("Percent:[%%]\n");
-	len2 = printf("Percent:[%%]\n");
-	_printf("Len:[%d]\n", len);
-	printf("Len:[%d]\n", len2);
-	_printf("Unknown:[%r]\n");
-	printf("Unknown:[%r]\n");
+	/* Test character specifier */
+	printf("Character Test:\n");
+	_printf("Character: %c\n", 'H');
+	printf("Character: %c\n", 'H');
+
+	/* Test string specifier */
+	printf("\nString Test:\n");
+	_printf("String: %s\n", "Hello, World!");
+	printf("String: %s\n", "Hello, World!");
+
+	/* Test percent specifier */
+	printf("\nPercent Test:\n");
+	_printf("Percent: %%\n");
+	printf("Percent: %%\n");
+
+	/* Test integer specifiers */
+	printf("\nInteger Tests:\n");
+	_printf("Positive Integer: %d\n", 42);
+	printf("Positive Integer: %d\n", 42);
+
+	_printf("Negative Integer: %i\n", -123);
+	printf("Negative Integer: %i\n", -123);
+
+	_printf("Zero: %d\n", 0);
+	printf("Zero: %d\n", 0);
+
+	/* Test length comparison */
+	len = _printf("Length Test: %d\n", 1024);
+	len2 = printf("Length Test: %d\n", 1024);
+
+	/* Print length comparison */
+	_printf("Our _printf length: %d\n", len);
+	printf("Standard printf length: %d\n", len2);
+
+	/* Test NULL string */
+	_printf("Null string test: %s\n", NULL);
+
+	/* Mixed specifiers test */
+	_printf("Mixed: char %c, string %s, int %d\n", 'A', "test", 42);
+
 	return (0);
 }
