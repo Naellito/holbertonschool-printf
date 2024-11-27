@@ -1,15 +1,15 @@
 #ifndef MAIN_H
-2 #define MAIN_H
-3
-4 #include <stdarg.h>
-5 #include <unistd.h>
-6
-7 /* Function prototypes */
-8 int _printf(const char *format, ...);
-9 int print_number(int n);
-10 int _putchar(char c);
-11
-12 #endif /* MAIN_H */
+#define MAIN_H
+
+#include <stdarg.h>
+#include <unistd.h>
+
+/* Function prototypes */
+int _printf(const char *format, ...);
+int print_number(int n);
+int _putchar(char c);
+
+#endif /* MAIN_H */
 
 
 #include <limits.h>
