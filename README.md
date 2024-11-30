@@ -21,7 +21,7 @@ to compile the program we must use this compiler:
 
 `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c`
 
-## 4. Examples of Usage 📋
+## 2. Examples of Usage 📋
 Example program that uses _printf:
 ```c
 #include <stdio.h>
@@ -56,7 +56,7 @@ Integer: 42, Negative: -42
 ```
 
 
-## 5. Testing 🔬
+## 3. Testing 🔬
 To test we use the main.c provided by holberton
 here is the code:
 
@@ -134,7 +134,7 @@ Unknown:[%r]
 Unknown:[%r]
 ```
 
-## 7. Specifiers ⚒︎
+## 4. Specifiers ⚒︎
 List of specifiers that the function handles:
   specifiers	|DESCRIPTION|
 |:---:|:---:|
@@ -144,12 +144,12 @@ List of specifiers that the function handles:
 |`%d`	|Print a decimal integer.
 |`%i`	|Print an integer (same as %d).|
 
-## 6. Man Page:
+## 5. Man Page:
 ![App Screenshot](https://i.imgur.com/zaSM7LW.png)
 ![App Screenshot](https://i.imgur.com/KeanotA.png)
 ![App Screenshot](https://i.imgur.com/UbXeX3U.png)
 
-## 8. Flowchart 📊
+## 6. Flowchart 📊
 
 ![App Screenshot](https://github.com/Naellito/holbertonschool-printf/blob/main/Flowchart-printf_function.png?raw=true)
 
