@@ -159,6 +159,6 @@ List of specifiers that the function handles:
 - [@ginftls](https://www.github.com/ginftls)
 
 
-![Logo](https://i.imgur.com/DUuV716.png)
+![Logo](https://i.imgur.com/Wx1pfay.png)
 
 
