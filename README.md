@@ -151,7 +151,7 @@ List of specifiers that the function handles:
 
 ## 8. Flowchart 📊
 
-![App Screenshot]()
+![App Screenshot](https://github.com/Naellito/holbertonschool-printf/blob/main/Flowchart-printf_function.png?raw=true)
 
 ## Authors
 
