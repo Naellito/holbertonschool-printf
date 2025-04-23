@@ -1,4 +1,4 @@
-.TH _printf 3 "27 November 2024" "" "_printf man page"
+.TH _printf 3 "24 avril 2025" "" "_printf man page"
 .SH NAME
 _printf \- a custom implementation of the standard printf function
 
@@ -49,8 +49,8 @@ Prints "33 YEARS OLD".
 Prints "the car is wonderful%".
 
 .TP
-.B _printf("we are on %ith", 27);
-Prints "we are on 27th".
+.B _printf("we are on %ith", 24);
+Prints "we are on 24th".
 
 .SH SEE ALSO
 .BR printf (3)
