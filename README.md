@@ -8,7 +8,7 @@ The **`_printf`** function is a custom implementation inspired by the standard p
 ### 🪄 Compilation command
 
 ```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c```
 
 ### 🔍 Exemple
 
